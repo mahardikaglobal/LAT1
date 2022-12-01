@@ -1,2 +1,2 @@
 # LAT1
-cuman latihan
+cuman latihan buat project
