@@ -9,6 +9,6 @@ jobs:
       - name: build and tag image
         run: docker build Dockerfile . --tag mahardikaglobal/test-action-github:v1
       - name: push image to docker hub
-        run: docker login -u ${{secret.DOCKERHUB_USERNAME}} -p ${{secret.DOCKERHUB_PASSWORD}} && docker push mahardikaglobal/test-action-github:v1
+        run: docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_PASSWORD}} && docker push mahardikaglobal/test-action-github:v1
          
       
